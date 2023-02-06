@@ -88,5 +88,8 @@ for (TouchMeterData *data in touchMeterDatas) {
 }
 ```
 
+# Scope of improvements:
+Add Unit Tests
+
 
 
