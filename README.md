@@ -4,16 +4,24 @@ Log touch location and accelerometer data.
 # Technical information :
 - Development Language Used : Swift 5
 - Current Version : 1.0
-- Build : 1
 - Deployment target : iOS 14.2
 - XcodeVersion : 14.2
 - Supported Devices : iPhone
 
 # Steps to add the package:
+(Offline)
+1. Download or clone the package from the repository.
+2. Open your project in Xcode.
+3. Go to File -> Add packages..
+4. In the package window tap "Add local".
+5. Browse the package and tap "Add local" button.
+6. Clean and build the proect.
+
+(Online)
 1. Open your project in Xcode.
 2. Go to File -> Add packages..
-3. In the package window tap "Add local".
-4. Browse the package and tap "Add local" button.
+3. Enter the repository URL in the search bar of the package window
+4. Select TouchMeter and tap "Add package" button.
 5. Clean and build the proect.
 
 # How to use:
