@@ -30,12 +30,16 @@ Log touch location and accelerometer data.
 In Objective-C,
 Add the following line in your AppDelegate didFinishLaunchingWithOptions method to facilate touch capturing
 ```
+@import TouchMeter;
+
 // setting custom window to capture touch events
 self.window = [[CustomWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 ```
 
 To start capturing touch and accelerometer data
 ```
+@import TouchMeter;
+
 // accessing TouchMeter singleton shared instance
 TouchMeter *touchMeter = [TouchMeter shared];
 
@@ -45,6 +49,9 @@ TouchMeter *touchMeter = [TouchMeter shared];
 
 To stop capturing touch and accelerometer data
 ```
+@import TouchMeter;
+
+
 // accessing TouchMeter singleton shared instance
 TouchMeter *touchMeter = [TouchMeter shared];
 
@@ -54,6 +61,9 @@ TouchMeter *touchMeter = [TouchMeter shared];
 
 To get captured data sorted by time
 ```
+@import TouchMeter;
+
+
 // accessing TouchMeter singleton shared instance
 TouchMeter *touchMeter = [TouchMeter shared];
 
@@ -63,6 +73,10 @@ NSArray *touchMeterDatas = [touchMeter getTouchMeterDatas];
 
 UseCase
 ```
+#import <CoreMotion/CoreMotion.h>
+@import TouchMeter;
+
+
 for (TouchMeterData *data in touchMeterDatas) {
     if (data.type == DataTypeTouch && [data.data isKindOfClass:[TouchLoc class]]) {
         TouchLoc *touchData = (TouchLoc *)data.data;
