@@ -14,8 +14,10 @@ Log touch location and accelerometer data.
 2. Open your project in Xcode.
 3. Go to File -> Add packages..
 4. In the package window tap "Add local".
-5. Browse the package and tap "Add local" button.
-6. Clean and build the proect.
+5. Browse the package and tap "Add package" button.
+6. In file navigator, tap on project root name and tap on (+) icon of Framework, Libraries and Embedded Content
+7. Select TouchMeter and tap Add.
+8. Clean and build the proect.
 
 (Online)
 1. Open your project in Xcode.
